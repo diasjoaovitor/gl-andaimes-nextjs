@@ -66,7 +66,15 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    @apply bg-black bg-gradient-to-tr from-zinc-800 to-black text-white;
+  }
+}
+
+@layer base {
+  .title {
+    @apply mb-6 text-3xl font-bold after:mt-1 after:block after:h-3 after:w-20 after:bg-yellow-400 after:content-[''];
   }
 }

@@ -56,6 +56,11 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
+      },
+      flex: {
+        '0-0-100': '0 0 100%',
+        '0-0-50': '0 0 50%',
+        '0-0-25': '0 0 25%'
       }
     }
   },

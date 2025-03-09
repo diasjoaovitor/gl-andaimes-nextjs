@@ -1,2 +1,6 @@
+'use client'
+export * from './contact'
+export * from './footer'
 export * from './header'
 export * from './hero'
+export * from './services-section'
