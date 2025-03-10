@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 
 const roboto = Roboto({
@@ -79,7 +80,10 @@ const RootLayout = ({
   children: React.ReactNode
 }>) => (
   <html lang="pt-br">
-    <body className={`${roboto.className} antialiased`}>{children}</body>
+    <body className={`${roboto.className} antialiased`}>
+      {children}
+      <Analytics />
+    </body>
   </html>
 )
 
